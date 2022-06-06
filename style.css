@@ -1,0 +1,162 @@
+/* Montserrat Font Import link */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* All page Styling*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Html Styling */
+
+html{
+    background-image:url(./img/sq.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* mylogo class Styling */
+
+.mylogo {
+width: 100px;
+padding: 0px 30px;
+margin: 0;
+}
+
+/* hello class Styling */
+
+.hello{
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-size: 10vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* hello class :hover Styling */
+
+.hello:hover{
+    font-size: 0;
+}
+
+/* hello class :after Styling */
+
+.hello:hover:after{
+    content: attr(data-hover);
+    font-size: 10vw;
+    transition: 2s;
+    animation: hello 2s both ;
+}
+
+/* hello class Animation @Keyframes */
+
+@keyframes hello{
+    from{
+        opacity: 0.2;
+        color: white;
+    }
+    to{
+        opacity: 1;
+        color:rgb(255, 205, 42) ;
+    }
+}
+
+/* iam class Styling */
+
+.iam{
+    color: rgb(255, 53, 53);
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size: 10vw;
+    font-family: 'Montserrat', sans-serif;
+}
+/* iam class :hover Styling */
+
+.iam:hover{
+    font-size: 0;
+}
+
+/* iam class :after Styling */
+
+.iam:hover:after{
+    content: attr(data-hover);
+    font-size: 10vw;
+    transition: 2s;
+    animation: iam 2s both;
+}
+
+/* hello class Animation @Keyframes */
+
+@keyframes iam{
+    from{
+        opacity: 0.2;
+        color: rgb(255, 53, 53);
+    }
+    to{
+        opacity: 1;
+        color:#8d47ff ;
+    }
+}
+
+/* elmos class Styling */
+
+.elmos{
+    color: rgb(255, 53, 53);
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    font-size: 10vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* elmos class :hover Styling */
+
+.elmos:hover{
+    font-size: 0;
+}
+
+/* elmos class :after Styling */
+
+.elmos:hover:after{
+    content: attr(data-hover);
+    font-size: 10vw;
+    transition: 2s;
+    animation: elmos 2s both;
+}
+
+/* elmos class Animation @Keyframes */
+
+@keyframes elmos{
+    from{
+        opacity: 0.2;
+        color: rgb(255, 53, 53);
+    }
+    to{
+        opacity: 1;
+        color:#556eff ;
+    }
+}
+
+/* a Styling */
+
+a {
+    text-decoration: none;
+}
+
+/* @media For Responsive Website */
+
+@media screen and (min-width: 100%) {
+        .hello,.elmos,.iam,.hello:hover:after,.elmos:hover:after,.iam:hover:after{
+            width: 100%;
+            height: 100%;
+            font-size: 1.5rem;
+        }
+}
+
+/* End Of Css Styling File */
